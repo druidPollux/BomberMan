@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BomberMan </string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>631</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Jeu</string>
+    </property>
+    <widget class="QMenu" name="menuNouvelle_Partie">
+     <property name="title">
+      <string>Nouvelle Partie</string>
+     </property>
+     <widget class="QMenu" name="menuPartie_solo">
+      <property name="title">
+       <string>Partie solo</string>
+      </property>
+      <addaction name="actionDemarrerPartieSolo"/>
+      <addaction name="actionSauvegarderPartieSolo"/>
+      <addaction name="actionChargerPartieSolo"/>
+     </widget>
+     <widget class="QMenu" name="menuPartie_multi_joueur">
+      <property name="title">
+       <string>Partie multi-joueur</string>
+      </property>
+      <addaction name="actionDemarrerPartieMulti"/>
+      <addaction name="actionChargerPartieMulti"/>
+     </widget>
+     <addaction name="menuPartie_solo"/>
+     <addaction name="menuPartie_multi_joueur"/>
+    </widget>
+    <widget class="QMenu" name="menuOptions">
+     <property name="title">
+      <string>Options</string>
+     </property>
+     <addaction name="actionCommandes_de_jeu"/>
+     <addaction name="actionAffichage"/>
+     <addaction name="actionAudio"/>
+    </widget>
+    <widget class="QMenu" name="menuProfil">
+     <property name="title">
+      <string>Profil</string>
+     </property>
+     <addaction name="actionInformations"/>
+     <addaction name="actionLeaderboard"/>
+    </widget>
+    <addaction name="menuNouvelle_Partie"/>
+    <addaction name="menuOptions"/>
+    <addaction name="menuProfil"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionAide"/>
+    <addaction name="actionA_propos"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDemarrerPartieSolo">
+   <property name="text">
+    <string>Démarrer partie</string>
+   </property>
+  </action>
+  <action name="actionSauvegarderPartieSolo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Sauvegarder partie</string>
+   </property>
+  </action>
+  <action name="actionDemarrerPartieMulti">
+   <property name="text">
+    <string>Démarrer partie</string>
+   </property>
+  </action>
+  <action name="actionChargerPartieMulti">
+   <property name="text">
+    <string>Charger partie</string>
+   </property>
+  </action>
+  <action name="actionChargerPartieSolo">
+   <property name="text">
+    <string>Charger partie</string>
+   </property>
+  </action>
+  <action name="actionCommandes_de_jeu">
+   <property name="text">
+    <string>Commandes de jeu</string>
+   </property>
+  </action>
+  <action name="actionAffichage">
+   <property name="text">
+    <string>Affichage</string>
+   </property>
+  </action>
+  <action name="actionAudio">
+   <property name="text">
+    <string>Audio</string>
+   </property>
+  </action>
+  <action name="actionInformations">
+   <property name="text">
+    <string>Informations</string>
+   </property>
+  </action>
+  <action name="actionLeaderboard">
+   <property name="text">
+    <string>Leaderboard</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionAide">
+   <property name="text">
+    <string>Aide</string>
+   </property>
+  </action>
+  <action name="actionA_propos">
+   <property name="text">
+    <string>A propos</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
