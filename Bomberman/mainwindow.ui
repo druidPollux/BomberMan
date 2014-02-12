@@ -63,6 +63,7 @@
      </property>
      <addaction name="actionInformations"/>
      <addaction name="actionLeaderboard"/>
+     <addaction name="actionAffichageStatistics"/>
     </widget>
     <addaction name="menuNouvelle_Partie"/>
     <addaction name="menuOptions"/>
@@ -146,6 +147,11 @@
   <action name="actionA_propos">
    <property name="text">
     <string>A propos</string>
+   </property>
+  </action>
+  <action name="actionAffichageStatistics">
+   <property name="text">
+    <string>Satistics</string>
    </property>
   </action>
  </widget>
