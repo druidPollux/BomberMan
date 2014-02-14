@@ -13,10 +13,11 @@
 #include <QString>
 #include <QTextStream>
 #include <QInputDialog>
-
+#include <QDialog>
 
 namespace Ui {
 class MainWindow;
+
 }
 
 class MainWindow : public QMainWindow
@@ -43,12 +44,10 @@ private slots:
     void deconnexionClient();
     void Statistics();
 
-
 private:
     Ui::MainWindow *ui;
     QLabel *etatServeur;
     QTcpServer *serveur; // Represente le serveur sur le reseau
     QList<QTcpSocket *> clients; // Gere un tableau contenant la liste des clients
 };
-
-#endif // MAINWINDOW_H
+#endif

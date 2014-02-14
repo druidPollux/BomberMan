@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include "windowstatistics.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -8,7 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    // Maximize the window
+
+   // Maximize the window
     showMaximized();
 
     //Show welcome message
@@ -27,7 +29,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAide,SIGNAL(triggered()),this,SLOT(Help()));
     connect(ui->actionA_propos,SIGNAL(triggered()),this,SLOT(Credits()));
     connect(ui->actionAffichageStatistics,SIGNAL(triggered()),this,SLOT(Statistics()));
+
 }
+
 
 MainWindow::~MainWindow()
 {
@@ -133,32 +137,40 @@ void MainWindow::Credits()
 
 void MainWindow::Statistics()
 {
-//QTextEdit zoneTexte;
-//zoneTexte.setGeometry(100,100,400,200);
-//zoneTexte.setReadOnly(true);
 
-    QString texte;
-    QFile fichier("C:/Users/admin/Documents/GitHub/BomberMan/Bomberman/1.txt");
-    if(fichier.open(QIODevice::ReadOnly | QIODevice::Text))
-    {
+QDialog windowstatistic;
+windowstatistic.exec();
 
-         texte = fichier.readAll();
-        // zoneTexte.setText(texte);
-        // zoneTexte.show();
-        QMessageBox msgStatistics;
-        msgStatistics.setGeometry(10,100,400,200);
-        msgStatistics.information(this, "Statistiques du joueur", texte);
+//QDialog test;
+// test.setGeometry(100,100,400,200);
+//test.exec();
+
+           //QTextEdit zoneTexte;
+                                            //zoneTexte.setGeometry(100,100,400,200);
+                                            //zoneTexte.setReadOnly(true);
+
+//QString texte;
+//QFile fichier("C:/Users/admin/Documents/GitHub/BomberMan/Bomberman/1.txt");
+//if(fichier.open(QIODevice::ReadOnly | QIODevice::Text))
+//{
+
+//texte = fichier.readAll();
+                                            // zoneTexte.setText(texte);
+                                            // zoneTexte.show();
+//QMessageBox msgStatistics;
+//msgStatistics.setGeometry(10,100,400,200);
+//msgStatistics.information(this, "Statistiques du joueur", texte);
 
 
 
 
-//QMessageBox information;
-// information.setGeometry(10,100,400,200);
-// information.information(this, "Statistiques du joueur", texte);
+                                            //QMessageBox information;
+                                            // information.setGeometry(10,100,400,200);
+                                            // information.information(this, "Statistiques du joueur", texte);
 
-         fichier.close();
-    }
-    else texte = "Impossible d'ouvrir le fichier !";
+  //       fichier.close();
+    //}
+    //else texte = "Impossible d'ouvrir le fichier !";
 
 
 }
