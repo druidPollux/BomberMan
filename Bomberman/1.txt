@@ -1,0 +1,7 @@
+Fichier des statistiques du jeu
+
+Date:
+Joueur:
+Score:
+Niveau:
+Divers:
