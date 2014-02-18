@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LaunchSoloGame</class>
+ <widget class="QDialog" name="LaunchSoloGame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="toolTip">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;BONJOUR&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="accessibleName">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Nouvel Partie&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>260</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>120</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollLevel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>101</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QRadioButton" name="diffNovice">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>82</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NOVICE</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="diffNormal">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NORMAL</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="diffVeteran">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>VETERAN</string>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="buttonStart">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>172</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>START !</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

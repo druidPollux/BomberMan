@@ -13,16 +13,17 @@
 #include <QString>
 #include <QTextStream>
 #include <QInputDialog>
-#include <QDialog>
+#include <Qdialog>
+#include <QFileDialog>
+#include <QAbstractSocket>
 
 namespace Ui {
 class MainWindow;
-
 }
 
 class MainWindow : public QMainWindow
 {
-    Q_OBJECT
+    Q_OBJECT       
 
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -50,4 +51,5 @@ private:
     QTcpServer *serveur; // Represente le serveur sur le reseau
     QList<QTcpSocket *> clients; // Gere un tableau contenant la liste des clients
 };
+
 #endif

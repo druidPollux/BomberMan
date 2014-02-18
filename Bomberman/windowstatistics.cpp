@@ -6,6 +6,7 @@ windowstatistics::windowstatistics(QWidget *parent) :
     ui(new Ui::windowstatistics)
 {
     ui->setupUi(this);
+    connect(ui->pushButtonFermer,SIGNAL(clicked()),this,SLOT(close()));
 }
 
 windowstatistics::~windowstatistics()
