@@ -1,0 +1,24 @@
+Le jeu présente deux modes je jeux : un mode aventure où Bomberman doit enquêter sur la 
+disparition de son ami et un mode « bataille » jouable à plusieurs ou en solo contre 
+l'intelligence artificielle. Dans le premier mode de jeu, Bomberman évolue dans un monde 
+composé de zones reliées entre elles où il devra tuer les ennemis en posant des bombes sur 
+leur trajectoire. Il pourra monter en puissance en récoltant des objets qui augmentant sa 
+jauge de vie, le nombre de bombes qu'il pourra transporter ou la distance de leur souffle. 
+Il pourra également dresser des karabons, sortes de pokémons. Ceux-ci ne se battent pas hormis 
+dans des arènes optionnelles mais certains lorsqu'ils sont équipés et activés avec le bouton 
+« B », donnent à Bomberman des capacités spéciales, comme de voir les passages secrets, de 
+pouvoir respirer sous l'eau, etc.
+Dans le mode multijoueurs, le créateur fixe les règles du jeu (durée maximale des parties, 
+nombre de victoires nécessaires pour gagner, ainsi que quelques options modifiant les 
+mécaniques de la partie), choisit une arène parmi les huit disponibles qui ont également une 
+influence sur les mécaniques (une arène présente des tapis roulants, une autre permet de se 
+téléporter, etc.). Une fois la partie lancée, chaque joueur commence dans un coin de la carte,
+ce nombre étant de fait limité à quatre. Ils devront chacun détruire les blocs effritables et 
+se réfugier dans les cavités pour ne pas être blessés par l'explosion. En détruisant les blocs, 
+des bonus apparaissent à leur emplacement qui améliorent les capacités de chacun lorsqu'ils 
+marchent dessus. Ces bonus peuvent améliorer la vitesse de déplacement, le nombre de bombes 
+qu'il est possible de poser simultanément, ou bien constituer des pénalités. Lorsqu'un joueur 
+est éliminé, son avatar est placé dans un chariot sur le côté de l'arène et il peut lancer des 
+bombes sur le terrain de jeu. S'il arrive à toucher un joueur dans l'arène, il est ressuscité 
+et peut continuer le combat. Le vainqueur est celui qui le premier a remporté le nombre de 
+victoires nécessaires.
